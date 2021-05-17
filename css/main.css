@@ -1,0 +1,148 @@
+/***** BASE STYLES *****/
+body {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/***** GRID *****/
+.full-width {
+    margin: 0 auto;
+    overflow: auto;
+    width: 1200px;
+}
+.half-width {
+    float: left;
+    width: 600px;
+}
+.third-width {
+    float: left;
+    width: 399px;
+}
+
+/***** HEADER *****/
+header {
+    height: 110px;
+}
+
+header h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 20px 0 20px 6px;
+}
+header h1 span {
+    color: #77a466;
+}
+
+/*** NAV ***/
+nav {
+    float: right;
+    padding: 30px 10px;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: #77a466;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/***** GALLERY *****/
+#gallery .full-width {
+    clear: both;
+    padding: 0 10px 0 6px;
+}
+img {
+    border-bottom: 3px solid #77a466;
+    border-top: 3px solid #77a466;
+}
+
+/***** ABOUT *****/
+#about .full-width {
+    clear: both;
+    padding: 30px 0 40px 6px;
+}
+#about h2 {
+    color: #77a466;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+#about p {
+    line-height: 25px;
+    padding-right: 42px;
+}
+
+/***** BOTTOM SECTION *****/
+#bottom-section .full-width {
+    border-top: 1px solid #dedbdc;
+    clear: both;
+}
+
+/*** MENU ***/
+#menu h3 {
+    font-size: 12px;
+    margin-bottom: 0;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+#menu ul {
+    list-style: none;
+    margin-top: 0;
+    padding-top: 20px;
+}
+#menu ul li {
+    color: #77a466;
+    font-size: 16px;
+    line-height: 36px;
+    margin-left: -40px;
+}
+
+/*** REVIEWS ***/
+#reviews {
+    border-left: 1px solid #dedbdc;
+    border-right: 1px solid #dedbdc;
+}
+#reviews h3 {
+    font-size: 12px;
+    margin-bottom: 0;
+    padding: 30px 0 0 30px;
+    text-transform: uppercase;
+}
+#reviews p {
+    line-height: 21px;
+    margin-top: 0;
+    padding: 20px 45px 20px 30px;
+}
+
+/*** CONTACT ***/
+#contact h3 {
+    font-size: 12px;
+    margin-bottom: 0;
+    padding: 30px 0 0 30px;
+    text-transform: uppercase;
+}
+#contact p {
+    line-height: 24px;
+    margin-top: 0;
+    padding: 20px 0 0 30px;
+}
+
+/***** FOOTER *****/
+footer .full-width {
+    border-top: 1px solid #dedbdc;
+    clear: both;
+}
+footer h2 {
+    font-size: 16px;
+    padding: 34px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+footer h2 span {
+    color: #77a466;
+    font-family: 'Galada', cursive;
+    text-transform: lowercase;
+}
