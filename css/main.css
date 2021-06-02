@@ -1,4 +1,4 @@
-/*** BASE STYLES ***/
+/***** BASE STYLES *****/
 html {
     font-size: 16px;
     height: 100%;
@@ -15,26 +15,27 @@ body {
     text-align: center;
 }
 
-/*** GRID LAYOUT ***/
+/***** GRID LAYOUT *****/
 .container {
     align-content: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1201px;
     width: 90%;
 }
 .full-width {
     width: 100%;
 }
 
-/*** HEADER ***/
+/**** HEADER *****/
 header {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px 0;
+    width: 100%;
 }
 #header h1 {
     font-size: 1.875em;
@@ -45,25 +46,29 @@ header {
 }
 
 /*** NAV ***/
+nav {
+    border-top: 3px solid #77a466;
+}
 #nav ul li {
     list-style-type: none;
-    margin-right: 30px;
+    margin-left: -40px;
     padding: 15px 0;
 }
 #nav ul li a {
     color: #77a466;
-    font-size: 0.875em;
+    font-size: 1em;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-/*** MAIN LAYOUT ***/
+/***** MAIN LAYOUT *****/
 #main-content {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: left;
 }
 
 /*** GALLERY ***/
@@ -74,9 +79,6 @@ header {
 }
 
 /*** ABOUT ***/
-#about {
-    margin: 0 20px;
-}
 #about-tagline {
     color: #77a466;
     font-size: 1.125em;
@@ -91,20 +93,18 @@ header {
 /*** FLEX ITEMS - MENU, REVIEWS, CONTACT ***/
 .flex-items {
     border-top: 1px solid #dedbdc;
-    margin: 0 20px;
-    padding: 20px;
+    padding: 20px 0;
 }
 .heading {
-    font-size: 0.75em;
+    font-size: 1em;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 #menu-list li {
     color: #77a466;
-    font-size: 1em;
     list-style-type: none;
     padding: 10px 0;
-    margin-right: 35px;
+    margin-left: -40px;
 }
 #reviews-para {
     line-height: 21px;
@@ -113,22 +113,31 @@ header {
     line-height: 24px;
 }
 
-/*** FOOTER ***/
+/***** FOOTER *****/
 footer {
     align-items: center;
     border-top: 1px solid #dedbdc;
     display: flex;
     justify-content: center;
-    margin: 0 20px;
     padding: 10px 0;
     width: 100%;
 }
 footer h2 {
-    font-size: 1em;
+    font-size: 0.9em;
     text-transform: uppercase;
 }
 footer h2 span {
     color: #77a466;
     font-family: 'Galada', cursive;
     text-transform: lowercase;
+}
+
+/***** TABLET BREAKPOINT & STYLES *****/
+@media all and (min-width: 768px) {
+
+}
+
+/***** DESKTOP BREAKPOINT & STYLES *****/
+@media all and (min-width: 1200px) {
+
 }
