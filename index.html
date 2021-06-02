@@ -11,81 +11,83 @@
     </head>
     
     <body>
-        <!-- ***** HEADER ***** -->
-        <header>
-            <div class="full-width">
-                <div class="half-width">
-                    <h1><span>Rogue</span> Pickings</h1>
-                </div>
-                <!-- *** NAV *** -->
-                <div class="half-width">
-                    <nav>
-                        <ul>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#menu">Menu</a></li>
-                            <li><a href="https://www.google.com/maps/place/1001+Potrero+Ave,+San+Francisco,+CA+94110/@37.7557307,-122.4069321,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e4a4450cba5:0x9ec273cc2c2ffa54!8m2!3d37.7557265!4d-122.4047381"
-                                    target="_blank" rel="noferrer noopener">Locations</a></li>
-                            <li><a href="#gallery">Gallery</a></li>
-                            <li><a href="#reviews">Reviews</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <!-- ***** GALLERY ***** -->
-            <div id="gallery">
+        <main class="container">
+            <!-- ***** HEADER ***** -->
+            <header>
                 <div class="full-width">
-                    <img src="img/hero-image.png" alt="Hero Image" />
-                </div>
-            </div>
-            <!-- ***** ABOUT ***** -->
-            <section id="about">
-                <div class="full-width">
-                    <h2>Welcome to our little corner of the internet!</h2>
-                    <p>Welcome to Rogue Pickings, the roaming truck bringing you 
-                    the freshest ingredients and ideas in food. Our team works 
-                    hard so you can be sure our ingredients are always fresh 
-                    and picked carefully. Our menu changes every day and is 
-                    made with you in mind. We can't wait to come to you! Check 
-                    out our locations to see where you can find us.
-                    </p>
-                </div>
-            </section>
-
-            <!-- ***** BOTTOM SECTION ***** -->
-            <section id="bottom-section">
-                <div class="full-width">
-                <!-- *** MENU *** -->
-                    <div id="menu" class="third-width">
-                        <h3>Today's Specials</h3>
-                        <ul>
-                            <li>Flaming Hummus & Falafel Salad</li>
-                            <li>Sizzling Bean Burrito</li>
-                            <li>Green Gloves Tamales</li>
-                        </ul>
+                    <div id="header">
+                        <h1><span>Rogue</span> Pickings</h1>
                     </div>
-                    <!-- *** REVIEWS *** -->
-                    <div id="reviews" class="third-width">
-                        <h3>Our Awesome Reivews</h3>
-                        <p>"I got so excited about the yumminess of the falafel 
-                        salad that I am typing this review as I inhale my lunch. 
-                        Yes it is that good.... Service was super friendly and 
-                        quick. Can't wait see you Rogue Pickings again tomorrow!"
+                    <!-- *** NAV *** -->
+                    <div id="nav">
+                        <nav>
+                            <ul>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="https://www.google.com/maps/place/1001+Potrero+Ave,+San+Francisco,+CA+94110/@37.7557307,-122.4069321,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e4a4450cba5:0x9ec273cc2c2ffa54!8m2!3d37.7557265!4d-122.4047381"
+                                        target="_blank" rel="noferrer noopener">Locations</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#reviews">Reviews</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <div id="main-content">
+                <!-- ***** GALLERY ***** -->
+                <div class="full-width">
+                    <div id="gallery">
+                        <img src="img/hero-image.png" alt="Hero Image" />
+                    </div>
+                </div>
+                <!-- ***** ABOUT ***** -->
+                <section id="about">
+                    <div class="full-width">
+                        <h2 id="about-tagline">Welcome to our little corner of the internet!</h2>
+                        <p id="about-para">Welcome to Rogue Pickings, the roaming truck bringing you 
+                        the freshest ingredients and ideas in food. Our team works 
+                        hard so you can be sure our ingredients are always fresh 
+                        and picked carefully. Our menu changes every day and is 
+                        made with you in mind. We can't wait to come to you! Check 
+                        out our locations to see where you can find us.
                         </p>
                     </div>
-                    <!-- *** CONTACT *** -->
-                    <div id="contact" class="third-width">
-                        <h3>Contact Us</h3>
-                        <p>1001 Potrero Avenue<br>
-                        San Francisco, CA 94110<br>
-                        (415) 206-8000
-                        </p>
+                </section>
+
+                <!-- ***** BOTTOM SECTION ***** -->
+                <section id="bottom-section">
+                    <div class="full-width">
+                    <!-- *** MENU *** -->
+                        <div id="menu" class="flex-items">
+                            <h3 class="heading">Today's Specials</h3>
+                            <ul id="menu-list">
+                                <li>Flaming Hummus & Falafel Salad</li>
+                                <li>Sizzling Bean Burrito</li>
+                                <li>Green Gloves Tamales</li>
+                            </ul>
+                        </div>
+                        <!-- *** REVIEWS *** -->
+                        <div id="reviews" class="flex-items">
+                            <h3 class="heading">Our Awesome Reivews</h3>
+                            <p id="reviews-para">"I got so excited about the yumminess of the falafel 
+                            salad that I am typing this review as I inhale my lunch. 
+                            Yes it is that good.... Service was super friendly and 
+                            quick. Can't wait see you Rogue Pickings again tomorrow!"
+                            </p>
+                        </div>
+                        <!-- *** CONTACT *** -->
+                        <div id="contact" class="flex-items">
+                            <h3 class="heading">Contact Us</h3>
+                            <p id="contact-address">1001 Potrero Avenue<br>
+                            San Francisco, CA 94110<br>
+                            (415) 206-8000
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
             
             <!-- ***** FOOTER ***** -->
             <footer>

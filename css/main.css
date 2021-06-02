@@ -1,144 +1,130 @@
-/***** BASE STYLES *****/
+/*** BASE STYLES ***/
+html {
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+}
 body {
+    align-items: center;
     color: #000000;
+    display: flex;
+    flex-flow: row wrap;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    justify-content: center;
+    text-align: center;
 }
 
-/***** GRID *****/
+/*** GRID LAYOUT ***/
+.container {
+    align-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 1200px;
+    width: 90%;
+}
 .full-width {
-    margin: 0 auto;
-    overflow: auto;
-    width: 1200px;
-}
-.half-width {
-    float: left;
-    width: 600px;
-}
-.third-width {
-    float: left;
-    width: 399px;
+    width: 100%;
 }
 
-/***** HEADER *****/
+/*** HEADER ***/
 header {
-    height: 110px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
 }
-
-header h1 {
-    font-size: 30px;
+#header h1 {
+    font-size: 1.875em;
     text-transform: uppercase;
-    padding: 20px 0 20px 6px;
 }
-header h1 span {
+#header h1 span {
     color: #77a466;
 }
 
 /*** NAV ***/
-nav {
-    float: right;
-    padding: 30px 10px;
+#nav ul li {
+    list-style-type: none;
+    margin-right: 30px;
+    padding: 15px 0;
 }
-nav ul li {
-    display: inline-block;
-}
-nav ul li a {
+#nav ul li a {
     color: #77a466;
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: 700;
-    padding-left: 21px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-/***** GALLERY *****/
-#gallery .full-width {
-    clear: both;
-    padding: 0 10px 0 6px;
+/*** MAIN LAYOUT ***/
+#main-content {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-img {
+
+/*** GALLERY ***/
+#gallery img {
     border-bottom: 3px solid #77a466;
     border-top: 3px solid #77a466;
+    width: 100%;
 }
 
-/***** ABOUT *****/
-#about .full-width {
-    clear: both;
-    padding: 30px 0 40px 6px;
+/*** ABOUT ***/
+#about {
+    margin: 0 20px;
 }
-#about h2 {
+#about-tagline {
     color: #77a466;
-    font-size: 18px;
+    font-size: 1.125em;
+    padding: 20px 0 10px 0;
     text-transform: uppercase;
 }
-#about p {
+#about-para {
     line-height: 25px;
-    padding-right: 42px;
+    margin-bottom: 40px;
 }
 
-/***** BOTTOM SECTION *****/
-#bottom-section .full-width {
+/*** FLEX ITEMS - MENU, REVIEWS, CONTACT ***/
+.flex-items {
     border-top: 1px solid #dedbdc;
-    clear: both;
+    margin: 0 20px;
+    padding: 20px;
 }
-
-/*** MENU ***/
-#menu h3 {
-    font-size: 12px;
-    margin-bottom: 0;
-    padding-top: 30px;
+.heading {
+    font-size: 0.75em;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
-#menu ul {
-    list-style: none;
-    margin-top: 0;
-    padding-top: 20px;
-}
-#menu ul li {
+#menu-list li {
     color: #77a466;
-    font-size: 16px;
-    line-height: 36px;
-    margin-left: -40px;
+    font-size: 1em;
+    list-style-type: none;
+    padding: 10px 0;
+    margin-right: 35px;
 }
-
-/*** REVIEWS ***/
-#reviews {
-    border-left: 1px solid #dedbdc;
-    border-right: 1px solid #dedbdc;
-}
-#reviews h3 {
-    font-size: 12px;
-    margin-bottom: 0;
-    padding: 30px 0 0 30px;
-    text-transform: uppercase;
-}
-#reviews p {
+#reviews-para {
     line-height: 21px;
-    margin-top: 0;
-    padding: 20px 45px 20px 30px;
 }
-
-/*** CONTACT ***/
-#contact h3 {
-    font-size: 12px;
-    margin-bottom: 0;
-    padding: 30px 0 0 30px;
-    text-transform: uppercase;
-}
-#contact p {
+#contact-address {
     line-height: 24px;
-    margin-top: 0;
-    padding: 20px 0 0 30px;
 }
 
-/***** FOOTER *****/
-footer .full-width {
+/*** FOOTER ***/
+footer {
+    align-items: center;
     border-top: 1px solid #dedbdc;
-    clear: both;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+    padding: 10px 0;
+    width: 100%;
 }
 footer h2 {
-    font-size: 16px;
-    padding: 34px 0;
-    text-align: center;
+    font-size: 1em;
     text-transform: uppercase;
 }
 footer h2 span {
