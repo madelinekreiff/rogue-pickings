@@ -30,28 +30,25 @@ body {
 
 /**** HEADER *****/
 header {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 20px 0;
     width: 100%;
 }
-#header h1 {
+#rest-name h1 {
+    border-bottom: 3px solid #77a466;
     font-size: 1.875em;
+    padding-bottom: 40px;
     text-transform: uppercase;
 }
-#header h1 span {
+#rest-name h1 span {
     color: #77a466;
 }
 
 /*** NAV ***/
-nav {
-    border-top: 3px solid #77a466;
+#nav ul {
+    padding-left: 0;
 }
 #nav ul li {
     list-style-type: none;
-    margin-left: -40px;
     padding: 15px 0;
 }
 #nav ul li a {
@@ -66,7 +63,7 @@ nav {
 #main-content {
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
     text-align: left;
 }
@@ -100,11 +97,13 @@ nav {
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+#menu-list {
+    padding-left: 0;
+}
 #menu-list li {
     color: #77a466;
     list-style-type: none;
     padding: 10px 0;
-    margin-left: -40px;
 }
 #reviews-para {
     line-height: 21px;
@@ -134,10 +133,43 @@ footer h2 span {
 
 /***** TABLET BREAKPOINT & STYLES *****/
 @media all and (min-width: 768px) {
-
+    #bottom-section .full-width {
+        align-items: flex-start;
+        border-top: 1px solid #dedbdc;
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex-items {
+        border: none;
+        flex-basis: 30%;
+        width: 30%;
+    }
+    #reviews {
+        border-left: 1px solid #dedbdc;
+        border-right: 1px solid #dedbdc;
+        padding: 20px 30px;
+    }
+    #contact {
+        padding-left: 30px;
+    }
 }
 
 /***** DESKTOP BREAKPOINT & STYLES *****/
 @media all and (min-width: 1200px) {
-
+    #header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    #rest-name h1 {
+        border: none;
+        text-align: left;
+        padding: 0;
+    }
+    #nav ul {
+        display: flex;
+    }
+    #nav ul li {
+        padding-left: 20px;
+    }
 }
